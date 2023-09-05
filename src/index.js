@@ -1,9 +1,10 @@
+require("dotenv").config();
 const { Socket } = require("dgram");
 const express = require("express");
 const { createServer } = require("http");
 const path = require("path");
 const { Server } = require("socket.io");
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 const httpServer = createServer(app);
@@ -86,6 +87,6 @@ io.on("connection", (socket) => {
   //   });
 });
 
-httpServer.listen(port, () => {
-  console.log(`Server is running on port ${port} !`);
+httpServer.listen(PORT, () => {
+  // console.log(`Server is running on port ${PORT} !`);
 });
