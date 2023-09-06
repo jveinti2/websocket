@@ -1,15 +1,48 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
 .container {
   display: grid;
   place-content: center;
 }
 
-.chat {
-  border: 1px solid #ccc;
-  height: 400px;
+h1 {
+  text-align: center;
+}
+
+.text-recomend {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.important-bullet {
+  color: #ff0000;
+}
+
+.onContent {
+  margin: 5px;
+}
+
+#namespace {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  background-color: #04b104;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.list-group-item {
+  text-decoration: underline;
+  list-style: none;
+  padding: 5px;
 }
 
 .chat .msgBox {
-  height: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+  height: 400px;
   overflow-y: scroll;
 }
 
@@ -22,4 +55,18 @@
   flex: 1 1 0%;
   padding: 10px;
   font-size: 16px;
+}
+
+#message {
+  border: 1px solid #ccc;
+  border-radius: 0 0 0 8px;
+  outline: none;
+}
+
+#sendMessage {
+  background-color: #2678e3;
+  color: white;
+  border: none;
+  border-radius: 0 0 8px 0;
+  cursor: pointer;
 }

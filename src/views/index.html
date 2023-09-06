@@ -11,19 +11,23 @@
       <div class="container">
         <div>
           <h1>Chat Websocket</h1>
-          <p>
-            Para usar correctamente el chat, debes abrir dos pestañas del
-            navegador
+          <p class="text-recomend">
+            <span class="important-bullet">*</span>Para usar correctamente el
+            chat, debes abrir dos pestañas del navegador
           </p>
+          <p>usuarios para sala 1: usuario1, usuario2, usuario3</p>
         </div>
         <!-- Seccion de chat -->
+        <div class="onContent">
+          <span id="namespace"></span>
+        </div>
         <section class="chat">
           <div class="msgBox">
-            <ul></ul>
+            <ul id="messageLists"></ul>
           </div>
           <div class="formBox">
-            <input type="text" id="message" placeholder="Message" />
-            <button type="submit">Send</button>
+            <input type="text" id="message" placeholder="Message" value="" />
+            <button id="sendMessage">Enviar</button>
           </div>
         </section>
       </div>
